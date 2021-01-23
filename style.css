@@ -8,14 +8,15 @@ body
     background-position: center;
     margin: 0%;
     font-size: 50px;
-
+    display: flex;justify-content: center;
+    align-items: center;
 
 }
 
-EO
+.button
 {
-    height: 200px;
-    width: 300px;
-    font-size: 30px;
+    height: 20px;
+    width: 30px;
+    font-size: 10px;
     
 }
