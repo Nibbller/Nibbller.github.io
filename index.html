@@ -1,33 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="powiększacz.css">
-</head>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>obliczacz</title>
+            <link rel="stylesheet" href="style.css">
+        </meta>
+   <style type="text/css">
+body {margin: 30px;}
+#wynik {padding: 5px; border:black 1px solid; margin-left: 5px;}
+.button {margin-top: 7px;}
+.pojemnik {margin-top: 5px;}
+</style>
+    </head>
 <body>
-    <div>
-    <button id="add">
+    <form>
+       <div>
+           EO EO NIBBLER KALKULATOR <br>
 
-        powiekszenie
-   
-</button>
-    
-    <button id="decline">
-
-        zmiejszenie        
-    
-</button>
-<div id="EO">
-<span id="number">
-0
-</span>
-</div>
-</div>
-
-     <script src="powiększacz.js"></script>
-   
-
-    </body>
+       </div>
+        <div class="pojemnik">
+            Numer 1: <input type="text" id="PierwszyNumer" /><br>
+        </div>
+        <div class="pojemnik">       
+            Numer 2: <input type="text" id="drugiNumer" /><br>
+        </div>
+        <input type="button" class="button" onclick="multiplyBy()" value="mnozenie" />
+        <input type="button" class="button" onclick="divideBy()" value="dzielenie" />
+        <input type="button" class="button" onclick="additionBy()" value="dodawanie" />
+        <input type="button" class="button" onclick="subtractionBy()" value="odejmowanie" />
+    </form>
+<p>Wynik  
+    <span id="wynik"></span>
+</p>
+<script>
+function multiplyBy()
+{
+    num1 = document.getElementById("PierwszyNumer").value;
+    num2 = document.getElementById("drugiNumer").value;
+    document.getElementById("wynik").innerHTML = num1 * num2;
+}
+function divideBy() 
+{ 
+    num1 = document.getElementById("PierwszyNumer").value;
+    num2 = document.getElementById("drugiNumer").value;
+    document.getElementById("wynik").innerHTML = num1 / num2;
+}
+function additionBy()
+{
+    num1 = document.getElementById("PierwszyNumer").value;
+    num2 = document.getElementById("drugiNumer").value;
+    document.getElementById("wynik").innerHTML = Number(num1) + Number(num2);
+}
+function subtractionBy()
+{
+    num1 = document.getElementById("PierwszyNumer").value;
+    num2 = document.getElementById("drugiNumer").value;
+    document.getElementById("wynik").innerHTML = num1 - num2;
+}
+</script>
+</body>
 </html>
