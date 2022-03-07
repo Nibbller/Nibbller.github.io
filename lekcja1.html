@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<title>C++Lekcja1</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style1.css" />
+ 
+</head>
+
+<body>
+
+  <div id="gora">
+    <div id="logo">
+    <a href="lekcja1.html">
+        <h1>Lekcja 1</h1>
+        
+    </a>
+    </div>
+    <div id="menu">
+        <ul>
+        <li><a href="index.html" class="menu_aktywne">Strona główna</a></li>
+        <li><a href="lekcja2.html">Następna lekcja ▶</a></li>
+        </ul>
+    </div>
+    
+   
+    
+</div>
+<div id="dol2">
+Wstęp do programowania
+
+
+
+
+
+</div>
+<div id="dol">
+
+Programowanie w pewnym sensie jest jak sztuka - ktoś może Ci tłumaczyć jak się programuje w danym języku programowania, może wyjaśnić Ci wszystkie reguły, może Ci tłumaczyć przykładowe programy, jednak w końcu to Ty będziesz pisać programy.
+
+
+Ten kurs, jak i każdy inny kurs programowania ma Ci przedstawić pewne mechanizmy, sposoby. Wszystkich tych mechanizmów będziesz niewątpliwie używać w swoich przyszłych programach (jednych częściej, a innych rzadziej), jednak nawet jeśli wszystkie te mechanizmy, sposoby i reguły zapamiętasz bardzo dobrze, w żaden sposób nie jest to gwarancją, że uda Ci się napisać jakiś większy, przydatny program.
+
+
+Ponieważ wszystkie zamieszczone w tym kursie kody programów będą napisane w języku C++ zgodnym ze standardami, to niestety może się zdarzyć, że część z nich na niektórych kompilatorach nie będzie działać. Jest to dość częste zjawisko i jeśli tylko Ty zaopatrzysz się w kompilator DevC++, nie powinno Cię zbytnio martwić, że Twój program może się nie chcieć kompilować na innym kompilatorze.
+
+
+Może się okazać, że niektóre przykłady z zamieszczonych tutaj w ogóle nie będą działać na innych kompilatorach. Ponieważ chcę się skupić na prawdziwym języku C++, dlatego też nie zamierzam uczyć Cię, co zrobić, żeby przedstawione programy działały w kompilatorach, które są po prostu niezgodne ze standardem języka. Jeżeli będziesz chciał uruchomić program na jakimś innym kompilatorze to będziesz musiał sam poprawić wszystkie błędy - co będzie dla Ciebie dodatkowym ćwiczeniem
+</div>
+
+<div id="dol3">
+
+Pierwszy program
+
+
+
+</div>
+
+<div id="zad">
+
+    <pre>
+
+#include &lt;iostream>
+#include &lt;cstring>
+
+using namespace std;
+
+int main()
+{
+    string imie;
+    cout &lt;&lt;"Podaj imie: ";
+    cin >>imie;
+    cin.ignore();
+    cout &lt;&lt;"Witaj "&lt;&lt;imie&lt;&lt;endl;
+    cout &lt;&lt;"Gratulacje. To Twoj pierwszy program!"&lt;&lt;endl;
+    cout &lt;&lt;"Nacisnij ENTER aby zakonczyc"&lt;&lt;endl;
+    getchar();
+    return 0;
+}
+
+
+
+
+</pre>
+
+
+</div>
+
+<div id="dol4">
+
+    Przepisz teraz powyższy kod programu, skompiluj go i uruchom. Jeśli w momencie kompilacji kompilator informuje Cię, że są jakieś błędy, to upewnij się, że wszystkie średniki są na swoim miejscu
+
+
+    Jeśli już uruchomisz program, podaj swoje imię i naciśnij ENTER. Program wypisze kilka komunikatów oraz będzie czekał znowu, aż naciśniesz ENTER. Wówczas program zakończy swoje działanie.
+    
+    W ten oto sposób udało Ci się napisać i uruchomić pierwszy program w C++. Prawda, że to nie takie trudne? Czas przejść do kolejnej lekcji i zrozumieć, co tak naprawdę nasz program zrobił.
+
+
+</div>
+</body>
+</html>
+

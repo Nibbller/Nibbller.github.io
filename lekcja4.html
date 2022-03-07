@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<title>C++Lekcja4</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style4.css" />
+ 
+</head>
+
+<body>
+
+  <div id="gora">
+    <div id="logo">
+    <a href="lekcja4.html">
+        <h1>Lekcja 4</h1>
+        
+    </a>
+    </div>
+    <div id="menu">
+        <ul>
+        <li><a href="index.html" class="menu_aktywne">Strona główna</a></li>
+        <li><a href="lekcja5.html">Następna Lekcja ▶</a></li>
+        </ul>
+    </div>
+    
+    </div>
+    <div id="dol2">
+        Jak pisać poprawny i przejrzysty kod
+        
+        
+        
+        
+        
+        </div>
+        <div id="dol">
+        
+            Przyjrzyj się teraz kodom, które przedstawiłem Ci już w tym kursie. Zauważ, że po większości linijek znajduje się średnik. Zwróć jednak uwagę, że średnik nie znajduje się na końcu każdej linii.
+
+
+            Spróbuj teraz w którymś z przykładowych programów skasować jeden ze średników. Spróbuj skompilować program. Zapewne ujrzysz błąd i program się nie skompiluje. Przywróć początkowy stan programu i teraz dla odmiany spróbuj dodać średnik w którejś z linii, w której średnika nie było. O ile tylko średnik nie został dostawiony w linii pustej lub linii zawierającej któryś z nawiasów klamrowych, programu również nie uda się skompilować.
+            
+            
+            Jak zatem możesz się już teraz domyślać, średniki znajdujące się na końcach linii nie znajdują się tam przypadkowo. Ich wstawienie lub niewstawienie jest za każdym razem bardzo ważne, bowiem mały błąd może spowodować albo to, że program się nie skompiluje, albo co gorsza, że program się skompiluje, ale będzie działał nie tak, jak autor programu sobie życzył.
+            
+            
+            Tak naprawdę, nie do końca jest prawdą, że średniki musimy stawiać na końcu niektórych linii. Średniki musimy stawiać na końcu każdej instrukcji.
+            Instrukcję w języku C++ można utożsamiać ze zdaniem. Instrukcja jakby mówi, co ma się zdarzyć np. zadeklaruj zmienną, pobierz zmienną x, wypisz komunikat na ekran, zwróć wartość 0.
+
+
+Oprócz instrukcji, w języku C++ występują również wyrażenia. Wyrażenia są jakby częściami instrukcji. Każda instrukcja może składać się z kilku lub kilkunastu wyrażeń. Na przykład, jeśli chcemy wypisać sumę liczb 2 i 3, wówczas suma liczb 2 i 3 stanowi wyrażenie, natomiast cała operacja wypisania stanowi instrukcję. Zasadniczą różnicą między instrukcjami i wyrażeniami jest to, że instrukcja musi zostać zakończona średnikiem. Natomiast wyrażeń nie kończymy średnikami - jeśli tak zrobimy, wówczas kompilator zasygnalizuje błąd.
+
+Wszystkie kody źródłowe, które do tej pory Ci przedstawiłem były kodami poprawnymi z punktu widzenia składni języka. Każdy z kodów poprawnie się kompilował i przy kompilacji nie pojawiał się żaden błąd. Jeśli kody przedstawionych programów były przez Ciebie pisane własnoręcznie, porównaj wygląd kodu mojego i Twojego. Czy w Twoim kodzie źródłowym również niektóre linie są puste oraz są stosowane wcięcia w niektórych liniach?
+
+
+Język C++ jest językiem, w którym tak naprawdę możemy pisać jak nam się to podoba. Możemy wstawiać puste linie, możemy kilka linii zapisać w jednej linii, a niektóre linie zapisać w kilku liniach. Możemy też stosować komentarze w zasadzie w dowolnym miejscu.
+    
+</div>
+
+        
+        <div id="dol3">
+        
+        Pierwszy program
+        
+        
+        
+        </div>
+        
+        <div id="zad">
+        
+            <pre>
+        
+    #include&lt;iostream>
+        using namespace std;int main(){cout &lt;&lt;"Hello world"&lt;&lt;endl; getchar();return 0;}
+
+        
+            #include&lt;iostream>
+                using namespace std;
+                int main()
+                {
+                cout &lt;&lt;"Hello world"&lt;&lt;endl;
+                getchar(); return 0;
+                }
+                    
+
+
+            #include&lt;iostream>
+                using namespace std;
+                int main(){
+                cout &lt;&lt;"Hello world"&lt;&lt;endl;
+                getchar();
+                return 0;
+                }
+
+
+
+            #include &lt;iostream>
+
+                using namespace std;
+                
+                int main()
+                {
+                    cout &lt;&lt;"Hello world"&lt;&lt;endl;
+                    getchar();
+                    return 0;
+                }
+                
+
+        </pre>
+        
+        
+        </div>
+        
+        <div id="dol4">
+        
+            Tak naprawdę, wygląd kodu dla działania programu nie ma żadnego znaczenia. Ważne jest jedynie, aby kod programu był poprawny. Wszystkie białe znaki (czyli spacje, dodatkowe linie, wcięcia za pomocą tabulatorów) nieznajdujące się pośród " i ', są ignorowane.
+
+
+Wygląd kodu ma znaczenie tylko dla człowieka. W kodzie napisanym według pewnych niepisanych zasad, zdecydowanie łatwiej znaleźć interesujące nas fragmenty i zdecydowanie łatwiej zrozumieć, co taki kod robi.
+
+
+Mam nadzieję, że jest oczywiste, że najbardziej czytelnym kodem z pośród grupy wcześniej przedstawionych kodów, jest kod napisany jako ostatni z przedstawionej grupy. W kodzie tym zostało zastosowanych kilka reguł. Przede wszystkim każda instrukcja znajduje się w nowej linii. Oprócz tego, dwie linie zostały pozostawione puste - aby oddzielić pewne fragmenty kodu od siebie. Na dodatek wszystko co znajduje się w funkcji main zostało "wcięte".
+
+
+Zastosowanie tych trzech prostych zabiegów - pustych linii, wcięć oraz pisania każdej instrukcji w oddzielnej linii, niewątpliwie zwiększyło czytelność kodu.
+
+
+Musisz jednak wiedzieć, że nie we wszystkich językach można robić "co się podoba". W niektórych starszych językach były na sztywno ustalone pewne zasady i ich nieprzestrzeganie powodowało, że kod się nie kompilował. Skoro język C++ pozwala na dowolne zabiegi poprawiające czytelność, to warto z nich skorzystać.
+
+
+Przy okazji pragnę zwrócić Twoją uwagę na tzw. wcięcia. Jeśli o mnie chodzi, stosuję wcięcia składające się z 3 znaków spacji. Moim zdaniem jest to najrozsądniejsza wielkość wcięć - są one zarówno widoczne, jak i przy bardziej skomplikowanych programach nie utrudniają pisania kodu. Ty oczywiście zastosujesz wcięcia jakie będziesz chcieć - to była tylko moja sugestia.
+
+
+Na koniec, pragnę zwrócić Twoją uwagę na to, co wspomniałem już wcześniej - po tym, jak wygląda kod programu, można zazwyczaj dość łatwo ocenić, czy ktoś już napisał kilkanaście - kilkadziesiąt kodów źródłowych, czy dopiero zaczyna naukę języka. Dlatego jeśli nie chcesz wszystkim ogłaszać, że jesteś początkującym programistą, postaraj się, aby Twój kod programu wyglądał jak należy.
+        
+        </div>
+</div>
+</body>
+</html>

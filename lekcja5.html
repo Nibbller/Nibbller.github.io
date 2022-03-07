@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<title>C++Lekcja5</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style5.css" />
+ 
+</head>
+
+<body>
+
+  <div id="gora">
+    <div id="logo">
+    <a href="lekcja5.html">
+        <h1>Lekcja 5</h1>
+        
+    </a>
+    </div>
+    <div id="menu">
+        <ul>
+        <li><a href="index.html" class="menu_aktywne">Strona główna</a></li>
+        <li><a href="lekcja1.html">Powrót na pierwszą lekcje ♻</a></li>
+        </ul>
+    </div>
+    
+    </div>
+    <div id="dol2">
+        Zmienne i podstawowe typy danych
+        
+        
+        
+        
+        
+        </div>
+        <div id="dol">
+        
+            Aby móc pisać jakiekolwiek przydatne programy, musimy operować na danych. źródła danych mogą być różne - mogą pochodzić z klawiatury, z pliku lub być przesyłane z zewnętrznego urządzenia.
+
+
+            Z pobieranymi danymi prawie na pewno będziemy chcieli coś zrobić - będziemy chcieli je przesłać gdzieś dalej lub w jakiś sposób przetworzyć. Co jednak, jeśli chcemy pobrać kilka danych np. dwie liczby za pomocą klawiatury a później wyświetlić ich sumę? Musimy przecież jakoś odróżnić pierwszą i drugą pobraną liczbę, żeby później móc je dodać. Do takich celów służą właśnie zmienne.
+            
+            
+            Zmienne są czymś w rodzaju pudełek, w których można przechowywać dane. W zmiennych będą przechowywane bardzo różne dane. Może to być zarówno pojedyncza liczba, pojedyncza litera, jak i kilka liczb, wyraz lub nawet całe zdanie.
+            
+            
+            To co będziemy chcieli przechowywać w zmiennej zależy tylko i wyłącznie od nas. Raz będzie to liczba, raz litera lub wyraz. Komputer oczywiście nie wie, jakie są nasze zamiary. Musimy mu to w jakiś sposób powiedzieć. Do tego celu służy typ zmiennej.
+
+            Jak już wspomniałem, to naszym zadaniem jest określenie typu zmiennej. Komputer sam się nie domyśli, czy chcemy, aby to co zostało pobrane np. z klawiatury było liczbą czy zwykłym napisem. Możesz pomyśleć, że to bez sensu, a jednak jest w tym głęboki sens.
+
+
+            Przede wszystkim, każda zmienna, której będziemy chcieli użyć w programie musi zostać umieszczona gdzieś w pamięci komputera. Jeśli podamy z klawiatury napis "ala", to to słowo zostanie gdzieś zapisane w pamięci komputera. Tak samo będzie, gdy podamy liczbę 4 - ona również musi zostać gdzieś zapisana w pamięci komputera.
+
+
+            Chyba nie muszę Cię przekonywać, że dane, które chcemy przekazać do komputera mogą być różnej długości. Może to być jedna litera, jak i 100 stron tekstu. Musimy jasno powiedzieć, jakiego typu ma być zmienna, aby można było zarezerwować w pamięci odpowiednią ilość miejsca.
+
+
+            Można by oczywiście rezerwować jak najwięcej pamięci, jednak nie jest zbyt rozsądnie zarezerwować na jedną literę całej pamięci operacyjnej czy nawet jej połowy. Dzięki temu, że podajemy typ zmiennej, w pamięci operacyjnej zostanie zarezerwowany dla zmiennej tylko fragment pamięci - dokładnie taki, jak wynika to z typu zmiennej.
+
+
+            Na dodatek o tym, że typy danych są konieczne, niech świadczy taka sytuacja. Chcesz dodać do siebie to, co podasz z klawiatury. Podajesz najpierw 2, a później 3. Jaki powinien być wynik? Pomyślisz sobie, że 5. No dobrze, a co jeśli najpierw podasz literę c, a za chwilę literę b. Pomyślisz sobie, że komputer powinien zauważyć, że to nie są liczby i rezultatem powinno być np. cb.
+
+
+            No dobrze. A co jeśli najpierw podasz literę c, a później 2? Pomyślisz sobie tak - jeden z podanych znaków jest literą, więc wynik powinien być c2 - to przecież oczywiste.
+
+
+            W takim razie czas na ostatnią zagadkę. Tym razem chcemy dodać do siebie aż trzy dane podane za pomocą klawiatury. Najpierw podajesz c, później 2 a na końcu 3. Jaki tym razem powinien być rezultat: c23 a może c5? Podejrzewam, że nie wiesz już jak byłoby rozsądniej.
+
+
+            Dlatego też stosowanie typów danych jest konieczne - dzięki temu będzie oczywiste jaki jest wynik np. dodawania danych do siebie. To, jaki rezultat otrzymamy, zależy tylko i wyłącznie od nas. Taki właśnie model przyjęto w C++.
+
+        </div>
+        
+        <div id="dol3">
+        
+            Przykładowe programy
+        
+        
+        
+        </div>
+        
+        <div id="zad">
+        
+            <pre>
+        
+#include &lt;iostream>
+
+using namespace std;
+
+int main()
+{
+    float mojaLiczba; // liczba zmiennopozycyjna, nazwa zmiennej
+    
+    cout &lt;&lt;"Podaj wartosc liczby: ";
+    cin >>mojaLiczba;
+    cin.ignore();
+    
+    cout &lt;&lt;endl&lt;&lt;"Wartosc liczby podanej przez Ciebie to "&lt;&lt;mojaLiczba&lt;&lt;endl;
+    cout &lt;&lt;"Typ float zajmuje "&lt;&lt;sizeof(float)&lt;&lt;" bajt(y/ow)."&lt;&lt;endl;
+    cout &lt;&lt;"Twoja zmienna zajmuje "&lt;&lt;sizeof(mojaLiczba)&lt;&lt;" bajt(y/ow)."&lt;&lt;endl&lt;&lt;endl;
+    
+    cout &lt;&lt;"Nacisnij ENTER aby zakonczyc"&lt;&lt;endl;
+    getchar();
+    return 0;
+}
+
+
+
+
+#include &lt;iostream>
+
+    using namespace std;
+    
+    int main()
+    {
+    double moj_wzrost; // liczba zmiennopozycyjna,
+    int wiek; //liczba calkowita
+    
+    cout &lt;&lt;"Podaj swoj wzrost (w metrach): ";
+    cin >>moj_wzrost;
+    cin.ignore();
+    
+    cout &lt;&lt;"Podaj swoj wiek: ";
+    cin >>wiek;
+    cin.ignore();
+    
+    cout &lt;&lt;endl&lt;&lt;"Masz "&lt;&lt;moj_wzrost&lt;&lt;" metrow wzrostu."&lt;&lt;endl;
+    cout &lt;&lt;"Typ double zajmuje "&lt;&lt;sizeof(double)&lt;&lt;" bajt(y/ow)."&lt;&lt;endl;
+    cout &lt;&lt;"Zmienna zajmuje "&lt;&lt;sizeof(moj_wzrost)&lt;&lt;" bajt(y/ow)."&lt;&lt;endl&lt;&lt;endl;
+    
+    cout &lt;&lt;endl&lt;&lt;"Masz "&lt;&lt;wiek&lt;&lt;" lat."&lt;&lt;endl;
+    cout &lt;&lt;"Typ int zajmuje "&lt;&lt;sizeof(int)&lt;&lt;" bajt(y/ow)."&lt;&lt;endl;
+    cout &lt;&lt;"Zmienna zajmuje "&lt;&lt;sizeof(wiek)&lt;&lt;" bajt(y/ow)."&lt;&lt;endl&lt;&lt;endl;
+    
+    cout &lt;&lt;"Nacisnij ENTER aby zakonczyc"&lt;&lt;endl;
+    getchar();
+    return 0;
+    } 
+
+
+        
+        
+        </pre>
+        
+        
+        </div>
+        
+        <div id="dol4">
+        
+            Dzięki tej lekcji, umiesz już deklarować zmienne w programie. Wiesz jak prawidłowo nazywać zmienne i czym są identyfikatory. Ponadto znasz już podstawowe typy liczbowe i wiesz jak można sprawdzić rozmiar dowolnego typu danych.
+        </div>
+</div>
+</body>
+</html>

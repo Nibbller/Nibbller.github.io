@@ -1,0 +1,159 @@
+body {
+	font-family: Arial;
+	font-size: 13px;
+	color: #F1F1F1;
+	background: rgb(8, 161, 199);
+	text-align: center;
+}
+
+#gora {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	height: 100px;
+}
+
+a {
+	color: #f4f6f7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#logo {
+	float: left;
+	margin-left: 10px;
+	padding: 0;
+}
+
+#logo h1 {
+	font-size: 36px;
+	font-weight: normal;
+	color: #fafafa;
+	text-shadow: #FFF 0px 1px 0px;
+}
+
+#logo p {
+	font-size: 13px;
+	color: #91989e;
+	text-transform: capitalize;
+	margin-top: -25px;
+	padding-left: 10px;
+}
+
+#menu {
+	width: 600px;
+	float: right;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 5px 5px 5px 5px;
+}
+
+#menu li {
+	display: block;
+	float: left;
+}
+
+#menu a {
+	color: #000000;
+	font-size: 16px;
+	display: block;
+	float: left;
+	padding: 16px 40px 12px 40px;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background: #ebeff0;
+	color: #000000;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+.menu_aktywne {
+	background: #ebeff0;
+	color: #000000;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+#search_top {
+	float: right;
+	margin-right: 30px;
+}
+
+#search_top input {
+	border: 1px solid #FFFFFF;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+
+#title_head {
+	float: left;
+	padding-top: 60px;
+	padding-left: 450px;
+	color: #F1F1F1;
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #39a2d3;
+}
+
+#dol {
+
+	
+	padding: 0 200px;
+	font-size: 24px;
+	margin-top: 70px;
+}
+
+#dol2 {
+	margin-top: 30px;
+	color: #000000;
+	padding: 0 200px;
+	font-size: 44px;
+}
+
+#zad{
+text-align: left;
+padding-left: 650px;
+font-size: 20px;
+color: rgba(0, 255, 76, 0.897);
+}
+
+#dol3{
+	
+	margin-top: 30px;
+	color: #000000;
+	padding: 0 200px;
+	font-size: 44px;
+
+
+}
+
+#dol4{
+	
+	padding: 0 200px;
+	font-size: 24px;
+	margin-top: 20px;
+
+
+}
+

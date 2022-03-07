@@ -1,0 +1,197 @@
+body {
+	font-family: Arial;
+	font-size: 13px;
+	color: #F1F1F1;
+	background: rgb(8, 161, 199);
+	text-align: center;
+}
+
+#gora {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+a {
+	color: #f4f6f7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#logo {
+	float: left;
+	margin-left: 10px;
+	padding: 0;
+}
+
+#logo h1 {
+	font-size: 36px;
+	font-weight: normal;
+	color: #fafafa;
+	text-shadow: #FFF 0px 1px 0px;
+}
+
+#logo p {
+	font-size: 13px;
+	color: #91989e;
+	text-transform: capitalize;
+	margin-top: -25px;
+	padding-left: 10px;
+}
+
+#menu {
+	width: 600px;
+	float: right;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 5px 5px 5px 5px;
+}
+
+#menu li {
+	display: block;
+	float: left;
+}
+
+#menu a {
+	color: #000000;
+	font-size: 16px;
+	display: block;
+	float: left;
+	padding: 16px 40px 12px 40px;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background: #ebeff0;
+	color: #000000;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+.menu_aktywne {
+	background: #ebeff0;
+	color: #000000;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+#search_top {
+	float: right;
+	margin-right: 30px;
+}
+
+#search_top input {
+	border: 1px solid #FFFFFF;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+#top {
+	float: left;
+	width: 960px;
+	height: 300px;
+	margin-top: 30px;
+	background: url(../images/c++.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#title_head {
+	float: left;
+	padding-top: 60px;
+	padding-left: 450px;
+	color: #F1F1F1;
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #39a2d3;
+}
+
+#paskol{
+
+width: 100%;
+display: flex;
+justify-content: center;
+padding-top: 50px;
+
+
+}
+
+#pasekbok {
+	float: right;
+	width: 280px;
+	line-height: 22px;
+	text-align: justify;
+	margin-top: 10px;
+	
+}
+
+#sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 5px 5px 5px 5px;
+}
+
+#sidebar li {
+	display: block;
+	float: left;
+	width: 270px;
+	border-bottom: 1px solid #CCC;
+}
+
+#sidebar a {
+	color: #39a2d3;
+	font-size: 14px;
+	display: block;
+	float: left;
+	padding: 4px 0px 4px 10px;
+	text-decoration: none;
+
+}
+
+#sidebar a:hover {
+	color: #777;
+	margin-left: 10px;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+}
+
+#pasekbok_title {
+	width: 270px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #000000;
+	float: left;
+	padding: 4px 0px 4px 10px;
+    background: #ebeff0;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+	text-align: center;
+}
+
+#sidebar p {
+	padding: 5px;
+}
+
+

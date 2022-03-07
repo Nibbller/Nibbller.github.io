@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<title>C++Lekcja2</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style2.css" />
+ 
+</head>
+
+<body>
+
+  <div id="gora">
+    <div id="logo">
+    <a href="lekcja2.html">
+        <h1>Lekcja 2</h1>
+        
+    </a>
+    </div>
+    <div id="menu">
+        <ul>
+        <li><a href="index.html" class="menu_aktywne">Strona główna</a></li>
+        <li><a href="lekcja3.html">Następna Lekcja ▶</a></li>
+        </ul>
+    </div>
+    
+    </div>
+    <div id="dol2">
+        Budowa programu w języku C++
+        
+        
+        
+        
+        
+        </div>
+        <div id="dol">
+        
+            Mimo, że programy napisane w języku C++ mogą być bardzo różnej długości, wszystkie jednak mają następującą budowę:
+
+# dyrektywy preprocesora
+
+Wszystkie dyrektywy preprocesora poprzedzone są znakiem #. Wszystkie dyrektywy preprocesora są wykonywane przez specjalny program zwany preprocesorem stąd ich nazwa. Na szczęście w większości kompilatorów (o ile nie we wszystkich) nie musimy się martwić tym, że dyrektywy te wykonuje preprocesor. Kompilator automatycznie uruchamia preprocesor gdy wykryje dyrektywę.
+Najczęściej wykorzystywaną dyrektywą preprocesora jest dyrektywa include - służy ona do dołączania plików nagłówkowych. Inną popularną dyrektywą jest define - służy ona do tworzenia nazw symbolicznych.
+wykorzystywane przestrzenie nazw
+
+W nieco bardziej skomplikowanych programach, aby ułatwić sobie życie, grupuje się pewne elementy w przestrzenie nazw. Również wszystkie elementy zdefiniowane standardowo w języku C++ są zdefiniowane w przestrzeni nazw - a konkretnie przestrzeni nazw o nazwie std.
+# funkcje zdefiniowane przez użytkownika
+
+Ponieważ programy pisane w języku C++ mogą być bardzo duże, dlatego też wymyślono mechanizm, aby grupować pewne fragmenty kodu w funkcje. Dzięki temu znacznie łatwiej poruszać się po takim programie czy też pisać programy w kilka osób. Funkcjami zajmiemy się na nieco dalszym etapie nauki.
+
+
+# główna funkcja programu
+
+Mimo, że funkcja ta działa jak zwykła funkcja ma ona dwie bardzo charakterystyczne cechy. Po pierwsze funkcja ta musi mieć zawsze nazwę main - tak ktoś sobie wymyślił, że główna funkcja programu tak się nazywa i tak już pozostało do dzisiaj. Drugą bardzo charakterystyczną cechą jest to, że od tej funkcji zaczyna się całe wykonanie programu.
+        </div>
+        
+        <div id="dol3">
+        
+            Schemat złożonego programu
+        
+        
+        
+        </div>
+        
+        <div id="zad">
+        
+            <pre>
+        
+        #include &lt;iostream>
+            #include &lt;cstring>
+            
+            using namespace std;
+            
+            int main()
+            {
+                return 0;
+            }
+
+
+
+
+        </pre>
+        
+        
+        </div>
+        
+        <div id="dol4">
+        
+            ak naprawdę ten schemat wcale nie jest złożony. Różni się on jedynie od poprzedniego tym, że oprócz pliku nagłówkowego iostream, dołączamy dodatkowo plik nagłówkowy string. Czasami bowiem będzie zdarzać się, że będziemy musieli dołączyć dwa (tak jak tutaj) lub większą ilość plików nagłówkowych, aby w sposób wygodny i szybki napisać program.
+
+
+Plik nagłówkowy cstring jest plikiem właściwym dla języka C++ do obsługi napisów. W niektórych kompilatorach zamiast pliku cstring należy dołączyć plik string. Jeśli również dołączenie pliku string nie pomaga, można wówczas spróbować dołączyć plik string.h
+Najbardziej właściwe jednak dla języka C++ jest używanie pliku nagłówkowego cstring, który jest zgodny ze standardami języka C++, zatem jeśli Twój kompilator umożliwia dołączenie pliku cstring, to jego powinieneś używać.
+        </div>
+</div>
+</body>
+</html>

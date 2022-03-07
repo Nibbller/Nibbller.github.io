@@ -1,64 +1,48 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-            <title>obliczacz</title>
-            <link rel="stylesheet" href="style.css">
-        </meta>
-   <style type="text/css">
-body {margin: 30px;}
-#wynik {padding: 5px; border:black 1px solid; margin-left: 5px;}
-.button {margin-top: 7px;}
-.pojemnik {margin-top: 5px;}
-</style>
-    </head>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<title>C++</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style.css" />
+ 
+</head>
+
 <body>
-    <form>
-       <div>
-           Jan Paweł 2 obliczacz <br>
 
-       </div>
-        <div class="pojemnik">
-            Numer 1: <input type="text" id="PierwszyNumer" /><br>
-        </div>
-        <div class="pojemnik">       
-            Numer 2: <input type="text" id="drugiNumer" /><br>
-        </div>
-        Wynik  
-        <span id="wynik"></span>
-        <p id="EO">
-        <input type="button" class="button" onclick="multiplyBy()" value="mnozenie" />
-        <input type="button" class="button" onclick="divideBy()" value="dzielenie" />
-        <input type="button" class="button" onclick="additionBy()" value="dodawanie" />
-        <input type="button" class="button" onclick="subtractionBy()" value="odejmowanie" />
-        </p>
+  <div id="gora">
+    <div id="logo">
+    <a href="index.html">
+        <h1>Strona o C++</h1>
+        
+    </a>
+    </div>
+    <div id="menu">
+        <ul>
+        <li><a href="index.html" class="menu_aktywne">Strona główna</a></li>
+        <li><a href="lekcjeinne.html">Zadania</a></li>
+        </ul>
+    </div>
+    <div id="top">
+    </div>
     
-    </form>
+    
+    <div id="paskol">
 
-<script>
-function multiplyBy()
-{
-    num1 = document.getElementById("PierwszyNumer").value;
-    num2 = document.getElementById("drugiNumer").value;
-    document.getElementById("wynik").innerHTML = num1 * num2;
-}
-function divideBy() 
-{ 
-    num1 = document.getElementById("PierwszyNumer").value;
-    num2 = document.getElementById("drugiNumer").value;
-    document.getElementById("wynik").innerHTML = num1 / num2;
-}
-function additionBy()
-{
-    num1 = document.getElementById("PierwszyNumer").value;
-    num2 = document.getElementById("drugiNumer").value;
-    document.getElementById("wynik").innerHTML = Number(num1) + Number(num2);
-}
-function subtractionBy()
-{
-    num1 = document.getElementById("PierwszyNumer").value;
-    num2 = document.getElementById("drugiNumer").value;
-    document.getElementById("wynik").innerHTML = num1 - num2;
-}
-</script>
+    
+    <div id="pasekbok">
+        
+        <div id="pasekbok_title">Lekcje C++</div>
+            <ul>
+            <li><a href="lekcja1.html">Lekcja 1</a></li>
+            <li><a href="lekcja2.html">Lekcja 2</a></li>
+            <li><a href="lekcja3.html">Lekcja 3</a></li>
+            <li><a href="lekcja4.html">Lekcja 4</a></li>
+            <li><a href="lekcja5.html">Lekcja 5</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    </div>
 </body>
 </html>

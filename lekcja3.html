@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<title>C++Lekcja3</title>
+
+ <link rel="stylesheet" type="text/css" href="css/style3.css" />
+ 
+</head>
+
+<body>
+
+  <div id="gora">
+    <div id="logo">
+    <a href="lekcja3.html">
+        <h1>Lekcja 3</h1>
+        
+    </a>
+    </div>
+    <div id="menu">
+        <ul>
+        <li><a href="index.html" class="menu_aktywne">Strona główna</a></li>
+        <li><a href="lekcja4.html">Następna Lekcja ▶</a></li>
+        </ul>
+    </div>
+    
+    </div>
+    <div id="dol2">
+        Pierwszy program - wyjaśnienie działania
+        
+        
+        
+        
+        
+        </div>
+        <div id="dol">
+        
+            Oprócz przedstawionych w poprzedniej lekcji elementów każdego programu, można wyróżnić jeszcze jeden element - komentarze. W przeciwieństwie jednak do wymienionych wcześniej elementów, komentarze nie mają żadnego znaczenia dla kompilatora.
+
+
+            Jedynym powodem stosowania komentarzy jest wygoda osoby piszącej programy. Co prawda pisząc program, trzeba będzie poświęcić dodatkowy czas na napisanie komentarza, jednak pomyśl jak dużo czasu zyskasz, gdy za kilka dni, tygodni czy miesięcy znów spojrzysz na program i uda Ci się bez problemu zrozumieć zawiłe fragmenty kodu właśnie dzięki komentarzom.
+            
+            
+            Stosowanie komentarzy ponadto jest niezbędne również, gdy nad programem pracuje kilka osób. Także pisząc programy, których fragmenty będziesz wykorzystywać w przyszłości w innych programach, komentarze są niezbędne.
+
+            Komentarze mogą być ponadto również bardzo przydatne podczas testowania programu. Jeśli nie wiemy gdzie jest błąd w naszym programie, możemy pewne części programu otoczyć komentarzem - wówczas ta część programu się nie wykona. Otaczając coraz więcej kodu komentarzami, uda nam się w końcu zmniejszyć kod programu tak bardzo, że będziemy mogli stwierdzić, że tam właśnie jest błąd. Po poprawieniu błędu należy wtedy oczywiście usunąć wszystkie znaki komentarzy, tak aby wykonywał się cały kod programu.
+
+
+        </div>
+        
+        <div id="dol3">
+        
+            Jak działa Twój pierwszy program
+        
+        
+        </div>
+        
+        <div id="zad">
+        
+            <pre>
+
+        #include <iostream>
+            #include <cstring>
+            
+            using namespace std;
+            
+            int main()
+            {
+                string imie;
+                cout &lt;&lt;"Podaj imie: ";
+                cin >>imie;
+                cin.ignore();
+                cout &lt;&lt;"Witaj "&lt;&lt;imie&lt;&lt;endl;
+                cout &lt;&lt;"Gratulacje. To Twoj pierwszy program!"&lt;&lt;endl;
+                cout &lt;&lt;"Nacisnij ENTER aby zakonczyc"&lt;&lt;endl;
+                getchar();
+                return 0;
+            }
+            
+
+
+
+            </pre>
+        
+        
+        </div>
+        
+        <div id="dol4">
+        
+            Ponieważ wiesz już co nieco o budowie programu w C++, mam nadzieję, że uda Ci się teraz zrozumieć przynajmniej część programu.
+
+
+            Na początku dołączamy dwa pliki nagłówkowe - już wiesz do czego pliki nagłówkowe służą. Plik iostream dołączamy, aby móc skorzystać z wypisywania na ekran (cout) oraz pobierania napisów z klawiatury (cin). Natomiast plik cstring dołączamy, aby móc skorzystać z typu string, który umożliwia operacje na napisach.
+            
+            
+            Następnie dołączamy standardową przestrzeń nazw std. Mimo, że to już wiesz to powtórzę - dzięki temu skracamy sobie zapis w dalszej części programu.
+            
+            
+            W kolejnej części programu znajduje się główna funkcja programu main, w której pomiędzy { oraz return 0; wstawiliśmy właściwą treść naszego programu.
+            
+            
+            Wszystkie linie, które zaczynają się od słowa cout służą do wypisywania na ekran. Zauważ, że po każdym cout znajduje się operator <<. Zwróć też uwagę, że większość napisów wypisywanych na ekran znajduje się w podwójnych cudzysłowach.
+            
+            
+            Dodatkowo na końcu linii powodujących wypisanie napisu na ekran pojawia się słowo endl. Jest to manipulator języka C++ umożliwiający przejście do następnej linii. Gdybyśmy nie użyli tego manipulatora, po uruchomieniu programu wszystkie napisy pojawiłyby się w jednej linii.
+            
+            
+            Manipulator endl jest manipulatorem języka C++ umożliwiającym przejście do nowej linii. Alternatywnie, aby przejść do nowej linii można użyć znaku nowej linii '\n'. Obie wersje mogą się różnić szybkością działania i w zależności od zastosowań jedna wersja przejścia do nowej linii może być lepsza od drugiej.
+            
+            
+            Linia zaczynająca się od cin służy do pobrania Twojego imienia z klawiatury. Zwróć uwagę, że po cin znajduje się operator >> a następnie słowo imie ale tym razem bez cudzysłowów.
+            
+            
+            Linia string imie; ma sygnalizować, że w naszym programie będziemy chcieli wykorzystać pewien napis. PóĽniej okazuje się, że napis pobieramy z klawiatury, a następnie wypisujemy na ekran.
+            
+            
+            Linia getchar(); powoduje, że nasz program czeka aż użytkownik naciśnie ENTER. Tak naprawdę getchar to pewna gotowa funkcja, która znajduje się w pliku nagłówkowym cstdio.
+            
+            
+            Jak widzisz, w programie nie dołączyłem jednak pliku nagłówkowego cstdio, ale tylko dlatego, że w przypadku mojego kompilatora i moich plików nagłówkowych, plik cstdio jest dołączany automatycznie. Pamiętaj jednak, że w niektórych kompilatorach będziesz musiał ręcznie dołączyć plik nagłówkowy cstdio, aby móc skompilować ten i inne programy przedstawione w tym kursie języka C++.
+        </div>
+</div>
+</body>
+</html>
